@@ -20,26 +20,9 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-
             ComposeTVTheme {
-                HomeScreen(title = "ComposeTV") {
-                    
-                }
+                HomeScreen(title = "ComposeTV")
             }
         }
-    }
-}
-
-
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    ComposeTVTheme {
-        Greeting("Android")
     }
 }
